@@ -51,6 +51,24 @@ hgl_string_length( char *p_hgl_string );
 
 /*
  * === @FUNCTION ==============================================================
+ * @Name: hgl_string_concat
+ *
+ * @Description:
+ *
+ * Concatenates two character sequences into a single character sequence,
+ * the sequence will be null-terminated.
+ *
+ * @Param: p_string_head - The beginning of the new sequence.
+ * @Param: p_string_tail - The end of the new sequence.
+ *
+ * @Return: A new character sequence.
+ * ============================================================================
+*/
+char *
+hgl_string_concat( char *p_string_head, char *p_string_tail );
+
+/*
+ * === @FUNCTION ==============================================================
  * @Name: hgl_string_destroy
  *
  * @Description:
